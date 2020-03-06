@@ -1,0 +1,9 @@
+<nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <a routerLinkActive="destaque" *ngFor="let item of itens">
+            <a class="navbar-brand" routerLink="{{item.route}}">{{item.label}}</a>
+        </a>
+    </nav>
+</nav>
+
+<!-- // O routerLink faz com que a página não seja recarregada ao mudar a rota -->
